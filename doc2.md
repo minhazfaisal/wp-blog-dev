@@ -203,6 +203,7 @@ page.php, page-sidebar.php
 6. Adding content, contact form using shortcode to contact us page
 7. We will create another layout 8/4 for about just for testing
 8. page-sidebar.php 8/4 column layout with sidebar. Same as before.
+9. Dynamic content will be displayed using loop and the_content
 
 **page.php**
 The page.php file serves as the default template for rendering static pages. When a visitor views a page on a WordPress site—such as an "About Us," "Contact," or "Services" page—WordPress automatically looks for this file to dictate how the layout and content are displayed.
