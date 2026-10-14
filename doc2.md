@@ -264,3 +264,21 @@ Note - there is a problem in the blogs menu. After adding the category blogs men
 2. Create page layout
 
 ---
+
+==Step 21: Creating pages - Contact Us==
+Contact us page, contact.php, style.css
+
+1. Contact page will work using plugin and calling the shortcode
+2. Differently by coding.
+3. Creating contact us page template contact.php
+4. Copy contact.html to contact.php
+5. Adding get_header(), get_footer()
+6. Add template name at the top
+7. Pages -> add page -> contact -> page template -> contact page -> publish
+8. Add this page to the menu
+9. Adding breadcrumbs in the title bar.
+10. Adding google map location -> src -> from theme option textarea
+11. Adding css
+12. Adding address, email, phone using theme option text field
+
+---
