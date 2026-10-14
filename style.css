@@ -100,3 +100,9 @@ Text Domain: wpt1
 .main_btn:hover{
     background-color: transparent !important;
 }
+/* contact us 2 */
+#map iframe{
+    width: 100%;
+    height: 500px;
+    border: 0;
+}
