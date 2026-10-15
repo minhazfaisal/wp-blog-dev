@@ -282,3 +282,13 @@ Contact us page, contact.php, style.css
 12. Adding address, email, phone using theme option text field
 
 ---
+
+==Step 22: Creating custom plugin for Contact form==
+plugins/plugin name(cs-form)/plugin file(cs-form.php)
+
+
+1. Creating custom plugin for the form
+2. In plugins folder create a folder name and plugin file
+3. In cs-form.php add requirements
+
+---
