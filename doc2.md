@@ -291,4 +291,8 @@ plugins/plugin name(cs-form)/plugin file(cs-form.php)
 2. In plugins folder create a folder name and plugin file
 3. In cs-form.php add requirements
 
+Plugin header requirements
+- https://developer.wordpress.org/plugins/plugin-basics/header-requirements/
+
+
 ---
