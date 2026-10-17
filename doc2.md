@@ -294,5 +294,48 @@ plugins/plugin name(cs-form)/plugin file(cs-form.php)
 Plugin header requirements
 - https://developer.wordpress.org/plugins/plugin-basics/header-requirements/
 
+plugin - https://github.com/minhazfaisal/Simple-form-to-colled-data-wp-plugin
+
+---
+
+==Step 23: Showing post in home page==
+font-page.php(f1)
+
+1. Using wp_query calling the post category
+
+```php
+<?php
+$args = array(
+    'post_type'           => 'post',
+    'posts_per_page'      => 3,
+    'category_name'       => 'featured', // Use the slug of your category
+    'ignore_sticky_posts' => 1,          // Ensures sticky posts don't push into this list
+);
+
+$featured_query = new WP_Query($args);
+
+if ($featured_query->have_posts()) : 
+    while ($featured_query->have_posts()) : $featured_query->the_post(); ?>
+        
+        <div class="featured-post-card">
+            <?php if (has_post_thumbnail()) : ?>
+                <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium'); ?></a>
+            <?php endif; ?>
+
+            <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+            <?php the_excerpt(); ?>
+        </div>
+
+    <?php endwhile;
+    wp_reset_postdata(); 
+endif; ?>
+```
+---
+
+==Step 24: Showing post in home page==
+font-page.php(f2), functions.php, homepage_widget.php
+
+1. Using widget
+
 
 ---
