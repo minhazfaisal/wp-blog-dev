@@ -18,6 +18,10 @@ require get_template_directory() . '/inc/theme_support.php';
 sidebar widget -
 */
 require get_template_directory() . '/inc/register_sidebar.php';
+/*
+home widget -
+*/
+require get_template_directory() . '/inc/homepage_widget.php';
 
 /*
 breadcrumb -
@@ -27,8 +31,9 @@ require get_template_directory() . '/inc/breadcrumb.php';
 /*
 redux framework -
 */
-require get_template_directory() . '/option_tree/redux-core/framework.php';
+require get_template_directory() . '/option_tree/redux-framework.php';
 require get_template_directory() . '/option_tree/sample/sample-config.php';
+// require get_template_directory() . '/option_tree/sample/sample-config-copy.php';
 
 /*
 archive.php - archive name or date name display
